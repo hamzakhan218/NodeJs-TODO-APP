@@ -4,7 +4,7 @@ var app = express();
 
 app.set('view engine','ejs');
 
-app.use('/assets' , express.static('./public'));
+app.use(express.static('./public'));
 
 todoController(app)
 
